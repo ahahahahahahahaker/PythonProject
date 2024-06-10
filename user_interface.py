@@ -119,6 +119,7 @@ def callback_message(callback):
         max_task[0] = int(cursor.fetchone()[0])
         #print(max_task[0])
 
+
         #photo = open(img, 'rb')
         markup = types.InlineKeyboardMarkup(row_width=3)
         last_task = types.InlineKeyboardButton('Прошлая задача', callback_data=f'{callback.data}_back')
